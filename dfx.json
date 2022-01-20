@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "dfx": "0.8.4",
+  "canisters": {
+    "nft": {
+      "candid": "nft/candid/nft.did",
+      "package": "nft",
+      "type": "rust"
+    },
+    "cap": {
+      "build": "echo",
+      "candid": "cap.did",
+      "wasm": "cap.wasm",
+      "type": "custom"
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": ""
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    },
+    "ic": {
+      "bind": "ic0.app"
+    }
+  }
+}
